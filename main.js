@@ -10,6 +10,14 @@ app.get("/", function (req, res) {
     res.render("home");
 });
 
+app.get("/add", function (req, res) {
+    res.render("addTender");
+});
+
+app.get("/view", function (req, res) {
+    // res.render("");
+});
+
 app.listen(3000, "localhost", function(req, res) {
     console.log("SERVER STARTED");
 });
