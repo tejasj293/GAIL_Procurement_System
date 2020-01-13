@@ -4,13 +4,16 @@
   "description": "Blockchain powered procurement system for GAIL",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
   },
   "author": "Tejas, Komal, Pratik, Monil, Sagar, Yogesh",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "connect-history-api-fallback": "^1.6.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "lite-server": "^2.5.4"
   }
 }
