@@ -14,8 +14,8 @@ app.get("/add", function (req, res) {
     res.render("addTender");
 });
 
-app.get("/view", function (req, res) {
-    // res.render("");
+app.get("/login", function (req, res) {
+    res.render("login");
 });
 
 app.listen(3000, "localhost", function(req, res) {

@@ -1,0 +1,39 @@
+<%- include ("partials/header") %>
+
+<body>
+    
+    <div class="loginForm">
+        <h4>GAIL Login</h4>
+        
+        <hr>
+        
+        <form method="" action="">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="form-control" name="email" type="email" placeholder="Enter email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" name="password" type="password" placeholder="Password">
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="checkbox" name="remember"> Remember Me
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-lg">LOG IN</button>
+                </div>
+            </div>
+        </form>
+        
+        <hr class="or">
+        
+        <button class="google-btn google-btn-login"><a href="/auth/google">Login with Google+</a></button>
+        
+    </div>
+
+<%- include ("partials/footer") %>

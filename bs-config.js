@@ -18,6 +18,10 @@ app.get("/view", function (req, res) {
     // res.render("");
 });
 
+app.get("/login", function (req, res) {
+    res.render("login");
+});
+
 module.exports = {
     "server": {
         "baseDir": "src",
