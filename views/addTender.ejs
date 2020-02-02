@@ -1,4 +1,6 @@
-<%- include ('partials/header') %>
+<%-
+include ('partials/header')
+ %>
 
     <div class='container'>
         <h1>Create New Tender</h1>
@@ -11,122 +13,27 @@
 
 			<hr>
 
-            <div class="form-group">
-              <label for="tenderNumber">Tender Number: </label>
-              <input type="number" class="form-control" name="tenderNumber" id="tenderNumber">
-			</div>
-			<div class="form-group">
-				<label for="tenderDate">Tender Date: </label>
-				<input type="date" class="form-control" name="tenderDate" id="tenderDate">
-			</div>
-
-			<hr>
-
-			<div class="form-group">
-				<div class="form-check">
-					<p>Type of bidding system:</p>
-					<input class="form-check-input" type="radio" name="typeOfBidding" id="single" value="single">
-					<label class="form-check-label" for="exampleRadios1">
-						Single Bid System
-					</label>
-					</div>
-					<div class="form-check">
-					<input class="form-check-input" type="radio" name="typeOfBidding" id="two" value="two">
-					<label class="form-check-label" for="exampleRadios2">
-						Two Bid System
-					</label>
-				</div>
-			</div>
-
-			<hr>
-
-			<div class="form-group">
-				<label for="deliveryDate">Contractual Delivery Date: </label>
-				<input type="date" class="form-control" name="deliveryDate" id="deliveryDate">
-			</div>
-            <div class="form-group">
-              <label for="paymentTerms">Payment Terms: </label>
-              <input type="text" class="form-control" name="paymentTerms" id="paymentTerms" aria-describedby="contactHelp" placeholder="Payment Details">
-              <small id="contactHelp" class="form-text text-muted">100% payment within 15 days after material received</small>
-			</div>
-			
-			<hr>
-
-			<div class="form-group">
-				<div class="form-check">
-					<p>Bid Security / Earnest Money Deposit (EMD):</p>
-					<input class="form-check-input" type="radio" name="deposit" id="applicable" value="applicable">
-					<label class="form-check-label" for="applicable">
-						Applicable
-					</label>
-					</div>
-					<div class="form-check">
-					<input class="form-check-input" type="radio" name="deposit" id="notApplicable" value="notApplicable">
-					<label class="form-check-label" for="notApplicable">
-						Not Applicable
-					</label>
-				</div>
-			</div>
-
-			<hr>
-
-			<p>Date, Time and Venue of Pre-Bid Meeting</p>
-			<div class="form-group">
-				<label for="preBidDate">Date: </label>
-				<input type="date" class="form-control" name="preBidDate" id="preBidDate">
-			</div>
-			<div class="form-group">
-				<label for="preBidTime">Time: </label>
-				<input type="time" class="form-control" name="preBidTime" id="preBidTime">
-			</div>
-			<div class="form-group">
-				<label for="preBidVenue">Venue: </label>
-				<input type="text" class="form-control" name="preBidVenue" id="preBidVenue">
-			</div>
-
-			<hr>
-
 			<p>Bid due Date and Time:</p>
 			<div class="form-group">
 				<label for="bidDueDate">Date: </label>
 				<input type="date" class="form-control" name="bidDueDate" id="bidDueDate">
 			</div>
-			<div class="form-group">
-				<label for="bidDueTime">Time: </label>
-				<input type="time" class="form-control" name="bidDueTime" id="bidDueTime">
-			</div>
-			
+
 			<hr>
 
-			<p>Date and Time of un-priced Bids:</p>
-			<div class="form-group">
-				<label for="unpricedBidsDate">Date: </label>
-				<input type="date" class="form-control" name="unpricedBidsDate" id="unpricedBidsDate">
-			</div>
-			<div class="form-group">
-				<label for="unpricedBidsTime">Time: </label>
-				<input type="time" class="form-control" name="unpricedBidsTime" id="unpricedBidsTime">
-			</div>
-			
-			<hr>
-			
 			<p>Contact Details:</p>
 
 			<div class="form-group">
 				<label for="contactName">Name: </label>
-				<input type="text" class="form-control" name="contactName" id="contactName">	
-			</div>
-            <div class="form-group">
-				<label for="contactDesignation">Designation: </label>
-				<input type="text" class="form-control" name="contactDesignation" id="contactDesignation">	
+				<input type="text" class="form-control" name="contactName" id="contactName">
 			</div>
 			<div class="form-group">
 				<label for="contactNumber">Phone Number: </label>
-				<input type="number" class="form-control" name="contactNumber" id="contactNumber">	
+				<input type="number" class="form-control" name="contactNumber" id="contactNumber">
 			</div>
 			<div class="form-group">
 				<label for="contactEmail">Email: </label>
-				<input type="email" class="form-control" name="contactEmail" id="contactEmail">	
+				<input type="email" class="form-control" name="contactEmail" id="contactEmail">
 			</div>
             <button type="submit" class="btn btn-primary">Add Tender</button>
         </form>

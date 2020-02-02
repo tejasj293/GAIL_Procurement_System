@@ -1,6 +1,7 @@
 var express    = require("express");
 var app        = express();
 var bodyParser = require("body-parser");
+import Web3 from 'web3'
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
