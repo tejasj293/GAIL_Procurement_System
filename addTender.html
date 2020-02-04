@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/quotation.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class='container'>
+        <h1>Create New Tender</h1>
+
+        <form>
+			<div class="form-group">
+				<label for="scope">Scope of Supply / Procurement: </label>
+				<textarea type="text" rows=5 class="form-control" name="scope" id="scope"></textarea>
+			</div>
+			
+			<hr>
+
+			<p>Bid Start Date and End Date:</p>
+			<div class="form-group">
+				<label for="bidStartDate">Start Date: </label>
+				<input type="date" class="form-control" name="bidStartDate" id="bidStartDate">
+			</div>
+			<div class="form-group">
+				<label for="bidEndDate">End Date: </label>
+				<input type="date" class="form-control" name="bidEndDate" id="bidEndDate">
+			</div>
+			
+			<hr>
+						
+			<p>Contact Details:</p>
+
+			<div class="form-group">
+				<label for="contactName">Name: </label>
+				<input type="text" class="form-control" name="contactName" id="contactName">	
+			</div>
+			<div class="form-group">
+				<label for="contactNumber">Phone Number: </label>
+				<input type="number" class="form-control" name="contactNumber" id="contactNumber">	
+			</div>
+			<div class="form-group">
+				<label for="contactEmail">Email: </label>
+				<input type="email" class="form-control" name="contactEmail" id="contactEmail">	
+			</div>
+            <button type="submit" class="btn btn-primary">Add Tender</button>
+        </form>
+    </div>
+
+</body>
+</html>

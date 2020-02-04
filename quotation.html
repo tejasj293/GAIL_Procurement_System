@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/js/quotation.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>This is a quotation</h1>
+
+        <form>
+			<div class="form-group">
+				<label for="scope">Bid Documnet No.: </label>
+				<textarea type="text" rows=5 class="form-control" name="docNo" id="docNo"></textarea>
+
+				<label for="scope">Description: </label>
+				<textarea type="text" rows=5 class="form-control" name="desc" id="desc"></textarea>
+			</div>
+			
+			<hr>
+
+			<p>Bid due Date and Time:</p>
+			<div class="form-group">
+				<label for="bidDueDate">Date: </label>
+				<input type="date" class="form-control" name="bidDueDate" id="bidDueDate">
+			</div>
+			
+			<hr>
+			
+			<div class="container">
+			    <table id="table" class="table order-list">
+			    <thead>
+			        <tr class="row">
+			            <td class="col-sm-4">Material Name</td>
+			            <td class="col-sm-4">Price of one peice</td>
+			            <td class="col-sm-4">Total price</td>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr class="row">
+			            <td class="col-sm-4">
+			                <input type="text" name="name" class="form-control" />
+			            </td>
+			            <td class="col-sm-4">
+			                <input type="number" name="priceOne"  class="form-control"/>
+			            </td>
+			            <td class="col-sm-2">
+			                <input type="number" name="totalPrice"  class="form-control"/>
+			            </td>
+			            <td class="col-sm-2"><a class="deleteRow"></a>
+
+			            </td>
+			        </tr>
+			    </tbody>
+			    <tfoot>
+			        <tr>
+			            <td colspan="5" style="text-align: left;">
+			                <input type="button" class="btn btn-lg btn-block " id="addrow" value="Add Row" />
+			            </td>
+			        </tr>
+			        <tr>
+			        </tr>
+			    </tfoot>
+			</table>
+		</div>
+
+
+			<button type="submit" class="btn btn-primary">Submit Quotation</button>
+        </form>
+    </div>
+
+</body>
+</html>
