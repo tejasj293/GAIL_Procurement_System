@@ -105,3 +105,19 @@ hr.or::after {
     text-align: center;
 }
 
+.quotation {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+.quotation .btn {
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+.currentOrders {
+    border: 1px solid black;
+}
